@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+:root{
+    --var-back:rgb(182, 36, 182);
+    
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--var-back);
+	font-family: "Montserrat", sans-serif;
+}
+
+.skills {
+	background: white;
+	padding: 50px;
+	border-radius: 18px;
+	box-shadow: 2px 2px 4px #acacac;
+}
+
+.skills .section-header {
+	margin: 0 0 80px;
+}
+
+.skills .section-header h1 {
+	color: black;
+	font-size: 38px;
+	font-weight: 800;
+}
+
+.skills .section-header hr {
+	width: 25%;
+	height: 5px;
+	background: black;
+	border-radius: 3px;
+	margin-top: 12px;
+}
+
+.progress {
+	position: relative;
+	width: 380px;
+	height: 30px;
+	margin: 70px 0 0;
+	border-radius: 20px;
+	background: #d8d8d8;
+}
+
+.progress span {
+	position: absolute;
+	top: -32px;
+	color: rgb(46, 46, 46);
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.progress .progress-bar {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+    
+}
+
+.progress:nth-child(2) .progress-bar {
+	background: #0093e9
+}
+
+.progress:nth-child(3) .progress-bar {
+	background: #fa5a8f
+}
+
+.progress:nth-child(4) .progress-bar {
+	background: #ff9205;
+}
